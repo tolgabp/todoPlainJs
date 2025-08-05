@@ -2,17 +2,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="path/to/my/index.js"></script>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Todo APP</h1>
-    <form>
-        <label for=""></label>
-        <input id="" type="text" placeholder="What should I do?">
-        <ul></ul>
-      </fieldset>
-    </form>
+    <nav class="navbar">
+      <ul class="navbar-menu">
+        <li>Lipsum1</li>
+        <li>Lipsum2</li>
+        <li>Lipsum3</li>
+        <li>Lipsum4</li>
+      </ul>
+    </nav>
+    <div id="todo-container">
+      <form id="todo-form">
+        <fieldset id="todo-fieldset">
+          <label for="todo-input">Add your activity</label>
+          <input type="text" id="todo-input" placeholder="Enter a task" />
+          <button id="add-button">Add</button>
+        </fieldset>
+      </form>
+    <ul id="todo-list"></ul>
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>
